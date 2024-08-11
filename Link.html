@@ -111,15 +111,11 @@ input[type="checkbox"]{
 .content{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
    
     
 }
-.content2{
-    width: 100%;
-    display: flex;
-   
-    
-}
+
 
 
 .kitab{
@@ -159,7 +155,7 @@ i{
   text-align: center;
   border-radius: 16px;
   justify-content: center;
-  margin-left: 16px;
+  margin-left: 30px;
   background-position: center;
   background-size: cover;
 }
@@ -170,7 +166,7 @@ i{
   text-align: center;
   border-radius: 16px;
   justify-content: center;
-  margin-left: 16px;
+  margin-left: 30px;
   background-position: center;
   background-size: cover;
 }
@@ -181,7 +177,7 @@ i{
   text-align: center;
   border-radius: 16px;
   justify-content: center;
-  margin-left: 16px;
+  margin-left:30px;
   background-position: center;
   background-size: cover;
 }
@@ -192,7 +188,7 @@ i{
   text-align: center;
   border-radius: 16px;
   justify-content: center;
-  margin-left: 16px;
+  margin-left: 30px;
   background-position: center;
   background-size: cover;
 }
@@ -203,7 +199,7 @@ i{
   text-align: center;
   border-radius: 16px;
   justify-content: center;
-  margin-left: 16px;
+  margin-left: 30px;
   background-position: center;
   background-size: cover;
 }
@@ -214,7 +210,7 @@ i{
   text-align: center;
   border-radius: 16px;
   justify-content: center;
-  margin-left: 16px;
+  margin-left: 30px;
   background-position: center;
   background-size: cover;
 }
@@ -225,7 +221,7 @@ i{
   text-align: center;
   border-radius: 16px;
   justify-content: center;
-  margin-left: 16px;
+  margin-left: 30px;
   background-position: center;
   background-size: cover;
 }
@@ -236,11 +232,33 @@ i{
   text-align: center;
   border-radius: 16px;
   justify-content: center;
-  margin-left: 16px;
+  margin-left: 30px;
   background-position: center;
   background-size: cover;
 }
 
+.resm8{
+  background-image: url("https://eduroom.az/uploads/posts/2024-04/3046cc8d28_ekran-resmi-2024-04-08-00_35_23.webp");
+  width: 100px;
+  height: 130px;
+  text-align: center;
+  border-radius: 16px;
+  justify-content: center;
+  margin-left: 30px;
+  background-position: center;
+  background-size: cover;
+}
+.resm9{
+  background-image: url("https://eduroom.az/uploads/posts/2023-09/mir_az-ekran-resmi-2023-09-09-19_35_29.webp");
+  width: 100px;
+  height: 130px;
+  text-align: center;
+  border-radius: 16px;
+  justify-content: center;
+  margin-left: 30px;
+  background-position: center;
+  background-size: cover;
+}
 
 .text{
   color: #f2f2f2;
@@ -254,6 +272,7 @@ i{
 }
 
 button{
+  font-size: 15px;
   padding: 1px 15px;
   border-radius: 10px;
   color: #111;
@@ -288,15 +307,7 @@ a:hover{
        }
 }
 
-@media only screen and (max-width: 760px){
-            .content2{
-                display: grid;
-                grid-template-columns: repeat(2,1fr);
-                width: 100%;
-                
-                
-       }
-}
+
 
 @media only screen and (max-width: 760px){
             .kitab{
@@ -380,6 +391,26 @@ a:hover{
                 margin-left: 5px;
        }
 }
+@media only screen and (max-width: 760px){
+            .resm8{
+                margin-left: 5px;
+       }
+}
+@media only screen and (max-width: 760px){
+            .resm9{
+                margin-left: 5px;
+       }
+}
+
+#find{
+  font-size: 25px;
+  border: none;
+  border-bottom: solid 0.5px;
+}
+
+#ss{
+  font-size: 25px;
+}
 </style>
 
 </head>
@@ -401,10 +432,10 @@ a:hover{
       <br>
       <div class="bas">
       <span class="basliq">
-        Knowing Changes Everything!
+        Bilmək Hər şeyi Dəyişdirir!
       </span>
       </div>
-      <br><br><span><i class="fa-solid fa-magnifying-glass"></i>Books</span>
+      <br><br><div class="search"><i id="ss" class="fa-solid fa-magnifying-glass"></i><input type="text" name="" id="find" placeholder="Kitab axtar..." onkeyup="search()"></div>
       <div class="content">
         
             <div class="kitab">
@@ -412,7 +443,7 @@ a:hover{
 
               </div>
               <div class="text">
-                English Dim Toplu  I hissə 2023
+                <h5>English Dim Toplu  I hissə 2023</h5>
               </div>
               <div class="nov">
                 Dərslik
@@ -425,7 +456,7 @@ a:hover{
 
               </div>
               <div class="text">
-                Riyaziyyat Dim Toplu I hissə 2023
+                <h5>Riyaziyyat Dim Toplu I hissə 2023</h5>
               </div>
               <div class="nov">
                 Dərslik
@@ -438,7 +469,7 @@ a:hover{
 
               </div>
               <div class="text">
-               Fizika Dim Toplu II hissə 2023
+                <h5>Fizika Dim Toplu II hissə 2023</h5>
               </div>
               <div class="nov">
                 Dərslik
@@ -451,7 +482,7 @@ a:hover{
 
               </div>
               <div class="text">
-               Kimya Dim Toplu II hissə 2019
+                <h5>Kimya Dim Toplu II hissə 2019</h5>
               </div>
               <div class="nov">
                 Dərslik
@@ -464,7 +495,7 @@ a:hover{
 
               </div>
               <div class="text">
-               Riyaziyyat Dim Toplu II hissə 2023
+                <h5>Riyaziyyat Dim Toplu II hissə 2023</h5>
               </div>
               <div class="nov">
                 Dərslik
@@ -477,29 +508,20 @@ a:hover{
 
               </div>
               <div class="text">
-                Informatika Dim Toplu 2023
+                <h5>Informatika Dim Toplu 2023</h5>
               </div>
               <div class="nov">
                 Dərslik
               </div>
               <button class="but"><a href="https://drive.google.com/file/d/1yrZBYySYsvOZHud1J-O8qzUvJAOI343k/view?usp=sharing" download="a"><i class="fa-solid fa-download"></i>Yüklə</a></button>
             </div>
-
-            
-
-      
-
-            
-      </div>
-
-      <div class="content2">
         
         <div class="kitab">
           <div class="resm7">
 
           </div>
           <div class="text">
-            Nərgiz Nəcəf 2022 100 sınaq
+            <h5>Nərgiz Nəcəf 2022 100 sınaq</h5>
           </div>
           <div class="nov">
             Dərslik
@@ -512,7 +534,7 @@ a:hover{
 
           </div>
           <div class="text">
-            English Dim Toplu II hissə 2023
+            <h5>English Dim Toplu II hissə 2023</h5>
           </div>
           <div class="nov">
             Dərslik
@@ -520,11 +542,52 @@ a:hover{
           <button class="but"><a href="https://drive.google.com/file/d/1hg0eIo3rlomKAUpJhsf_Nu-HFgeBMPZM/view?usp=sharing" download="a"><i class="fa-solid fa-download"></i>Yüklə</a></button>
         </div>
 
+        <div class="kitab">
+          <div class="resm8">
+
+          </div>
+          <div class="text">
+            <h5>Riyaziyyat Güvən blok Testlər</h5>
+          </div>
+          <div class="nov">
+            Dərslik
+          </div>
+          <button class="but"><a href="https://drive.google.com/file/d/1EYTgMmoMeAwr8eVFCro5q-btEeJjft0l/view?usp=sharing" download="a"><i class="fa-solid fa-download"></i>Yüklə</a></button>
+        </div>
+
+        <div class="kitab">
+          <div class="resm9">
+
+          </div>
+          <div class="text">
+           <h5>Fizika Dim Toplu I hissə 2023</h5>
+          </div>
+          <div class="nov">
+            Dərslik
+          </div>
+          <button class="but"><a href="https://drive.google.com/file/d/1drtzFgZRUnvsEedYeJbl8CXynlsB-OKB/view?usp=sharing" download="a"><i class="fa-solid fa-download"></i>Yüklə</a></button>
+        </div>
+
       </div>
     
-    <script>
-
-    </script>
+      <script type="text/javascript">
+        function search() {
+        let filter = document.getElementById('find').value.toUpperCase();
+        let item = document.querySelectorAll('.kitab');
+        let l = document.getElementsByTagName('h5');
+        for(var i = 0;i<=l.length;i++){
+        let a=item[i].getElementsByTagName('h5')[0];
+        let value=a.innerHTML || a.innerText || a.textContent;
+        if(value.toUpperCase().indexOf(filter) > -1) {
+        item[i].style.display="";
+        }
+        else
+        {
+        item[i].style.display="none";
+        }
+        }
+        }
+        </script>
 
 </body>
 </html>
