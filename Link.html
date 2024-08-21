@@ -120,6 +120,7 @@ input[type="checkbox"]{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    
    
     
 }
@@ -1387,6 +1388,7 @@ h2{
     cursor: pointer;
 
 }
+
 #lg{
    
     position: fixed;
@@ -1396,7 +1398,7 @@ h2{
     border-radius: 10px;
     color: white;
     bottom:76px;
-    display: none;
+   display: none ;
 }
 li{
     list-style: none;
@@ -2084,7 +2086,7 @@ img{
     
               </div>
               <div class="text">
-                <h5>Kimya Güvən<br>Nəzəriyyə</h5>
+                <h5>Kimya Güvən Nəzəriyyə</h5>
               </div>
               <div class="nov">
                 Dərslik
@@ -2703,6 +2705,7 @@ img{
         let filter = document.getElementById('find').value.toUpperCase();
         let item = document.querySelectorAll('.kitab');
         let l = document.getElementsByTagName('h5');
+        
         for(var i = 0;i<=l.length;i++){
         let a=item[i].getElementsByTagName('h5')[0];
         let value=a.innerHTML || a.innerText || a.textContent;
@@ -2716,17 +2719,22 @@ img{
         }
         }
 
+        
+
 
 
         //language
 
-        document.getElementById('lang');
-
         function hide() {
-    const language = document.getElementById('lg');
-    language.style.display = language.style.display === 'none' ? 'block' : 'none';
-}
-
+          var x = document.getElementById("lg")
+          if(x.style.display ==="block"){
+            x.style.display = "none";
+          }
+          else{
+            x.style.display = "block";
+          }
+        }
+  
         //chatbot
 
         const responses = {
@@ -2785,8 +2793,14 @@ document.getElementById('user-input').addEventListener('keypress', function(e) {
 });
 
 function toggleChatbot() {
-    const chatbotPopup = document.getElementById('chatbot-popup');
-    chatbotPopup.style.display = chatbotPopup.style.display === 'none' ? 'block' : 'none';
+    var chatbotPopup = document.getElementById('chatbot-popup')
+    if (chatbotPopup.style.display === "block"){
+      chatbotPopup.style.display = "none";
+    }
+    else{
+      chatbotPopup.style.display = "block";
+    }
+    
 }
 
 function sendMessage() {
